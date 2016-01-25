@@ -26,3 +26,5 @@ tags: git
 所以说，只要你`commit`过，始终`reflog`绝壁是能找到你的`commit`记录的
 
 "Keep calm and use `git reflog`"
+
+[参考文档](http://stackoverflow.com/questions/17857723/whats-the-difference-between-git-reflog-and-log)
