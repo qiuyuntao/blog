@@ -30,6 +30,13 @@ tags: npm
   * `npm install <package_name> --save-dev`安装模块，并写入`package.json`的`devDependencies`字段
 
 
+* `package.json`中的版本号
+  * 指定版本: `"gulp": "1.2.2"`，只允许装`1.2.2`的版本
+  * 允许bug-fixed版本自动升级`~`: `"gulp": "~1.2.2"`，最后一位小版本可以高于2，但不允许装`1.3.x`的版本,`1.2.3`的版本是可以的
+  * 中间版本号可以升级`+`: `"gulp": "+1.2.2"`,可以安装`1.x.x`的版本，但是`2.x.x`是不允许的
+  * `latest`: `"gulp": "latest"`，安装最新版本
+
+
 * 升级模块
   * 本地模块
     * `npm outdated` 查看哪些需要升级

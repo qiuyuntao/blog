@@ -44,6 +44,25 @@ tags: npm
   * `npm publish`
 
 
+* `npm`tags
+  * 安装`npm`包的时候，可以使用`npm install qyt-test`来安装，或者使用`npm install qyt-test@1.0.0`、`npm install qyt-test@beta`来安装
+  * @后面的标识符就是我们`npm publish`发布所打的`tag`。
+  * 默认情况，发布版本的时候会打上你的`package.json`的version做为tag。
+    * 例如你的`package.json`里的`"version": "1.0.3"`，你安装的时候就可以使用`npm install qyt-test@1.0.3`
+  * 同时默认情况下，会在最后一次的`npm publish`中给你打上`latest`的tag
+    * 例如你的最后一次发布`package.json`里的`"version": "1.0.3"`，你安装的时候就可以使用`npm install qyt-test@1.0.3`以及`npm install qyt-test@latest`
+  * 你也可以增加其他的`tag`
+    * `npm dist-tag add <pkg>@<version> [<tag>]`  例如 `npm dist-tag qyt-test@1.0.3 beta`
+    * 你也可以直接在发布的时候`npm publish --tag beta`
+    * 如果你想给已经发布过的模块打`tag`，也是使用`npm dist-tag qyt-test@1.0.0 beta`
+  * 删除`tag`
+    * `npm dist-tag rm <pkg> <tag>`
+    * 例如`npm dist-tag rm qyt-test beta`
+  * 查看模块`tag`
+    * `npm dist-tag ls [<pkg>]`
+    * 例如 `npm dist-tag ls qyt-test`
+
+
 使用你发布的模块
 --
 
@@ -60,12 +79,12 @@ tags: npm
 
 * 创建文件
   ```
-    touch index.js
+  touch index.js
 
-    /**
-    * in index.js
-    **/
-    var a = require('qyt-test');
+  /**
+  * in index.js
+  **/
+  var a = require('qyt-test');
   ```
 
 
