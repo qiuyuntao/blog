@@ -1,7 +1,7 @@
 ---
 title: 如何判断页面是否在iframe中
 date: 2016-01-21 22:12:57
-tags: javascript 
+tags: javascript
 ---
 
 卧槽。。。我做前端这么久，一直没接触过`iframe`，最近在搞登录，总算是有机会接触下这玩意了。
@@ -49,7 +49,3 @@ if (window.top === window) {
   </body>
 </html>
 ```
-
-### action
-
-如果是跨域的话，那是啥狗屁也拿不到的啊！！！
