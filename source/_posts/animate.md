@@ -1,9 +1,8 @@
 ---
-
-title: animate date: 2016-10-03 15:19:59
-
-tags:
------
+title: css 动画
+date: 2016-10-03 15:19:59
+tags: css
+---
 
 animate动画
 ---
@@ -21,12 +20,12 @@ animate动画
 * `animation-iteration-count` 动画播放的次数
 * `animation-direction` 属性定义是否应该轮流反向播放动画
 	* normal 动画正常播放
-	* alternate 动画轮流反向播放 
+	* alternate 动画轮流反向播放
 * `animation-fill-mode` 属性规定动画在播放之前或之后，其动画效果是否可见
 	* none 不改变
 	* forwards 动画完成后，保持最后一帧
 	* backwards 动画完成后，保持第一帧
-	* both 前后叠加效果 
+	* both 前后叠加效果
 * `animation-play-state` 动画是暂停还是继续进行
 	* 可以在js中进行操作 `object.style.animationPlayState="paused"`
 
@@ -91,16 +90,16 @@ transform动画
 
 #### transform属性
 
-* none	定义不进行转换。	
+* none	定义不进行转换。
 * matrix(n,n,n,n,n,n)	定义 2D 转换，使用六个值的矩阵。
 * matrix3d(n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n)	定义 3D 转换，使用 16 个值的 4x4 矩阵
-* translate(x,y)	定义 2D 转换。	
-* translate3d(x,y,z)	定义 3D 转换。	
+* translate(x,y)	定义 2D 转换。
+* translate3d(x,y,z)	定义 3D 转换。
 * translateX(x)	定义转换，只是用 X 轴的值。
 * translateY(y)	定义转换，只是用 Y 轴的值。
 * translateZ(z)	定义 3D 转换，只是用 Z 轴的值。
-* scale(x,y)	定义 2D 缩放转换。	
-* scale3d(x,y,z)	定义 3D 缩放转换。	
+* scale(x,y)	定义 2D 缩放转换。
+* scale3d(x,y,z)	定义 3D 缩放转换。
 * scaleX(x)	通过设置 X 轴的值来定义缩放转换。
 * scaleY(y)	通过设置 Y 轴的值来定义缩放转换。
 * scaleZ(z)	通过设置 Z 轴的值来定义 3D 缩放转换。
